@@ -1,24 +1,21 @@
 plugins {
-    id ("com.android.application")
-    id ("org.jetbrains.kotlin.android")
+    id("xiashao.android.application")
 }
-
 android {
     namespace = "com.xiashao.sample"
-    compileSdkVersion(33)
+    compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.xiashao.sample"
-        minSdkVersion(24)
-        targetSdkVersion(33)
-        versionCode = 1
-        versionName = "1.0"
-
+        minSdk = 24
+        targetSdk = 33
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
         }
     }
+//    hilt {
+//        enableAggregatingTask = true
+//    }
 
     buildTypes {
         getByName("release") {

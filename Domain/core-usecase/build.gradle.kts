@@ -1,10 +1,10 @@
 plugins {
-    id("com.android.library")
-    id ("org.jetbrains.kotlin.android")
+    id("xiashao.android.library")
+    id("xiashao.android.hilt.library")
 }
 
 android {
-    namespace = "com.xiashao.sample.domain"
+    namespace = "com.xiashao.domain.usecase"
     compileSdk = 33
 
     defaultConfig {
@@ -25,8 +25,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 

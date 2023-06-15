@@ -1,4 +1,4 @@
-package com.telenav.ivi.data.repo
+package com.xiashao.data.repo
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.telenav.ivi.data.repo.test", appContext.packageName)
+        assertEquals("com.xiashao.data.repo.test", appContext.packageName)
     }
 }

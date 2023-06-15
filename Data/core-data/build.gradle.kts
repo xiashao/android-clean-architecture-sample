@@ -1,7 +1,6 @@
 plugins {
-    id("com.android.library")
-    id ("org.jetbrains.kotlin.android")
-    id("ivi.android.hilt.library")
+    id("xiashao.android.library")
+    id("xiashao.android.hilt.library")
 }
 
 android {
@@ -17,17 +16,10 @@ android {
     }
 
     buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
-        }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 
@@ -36,16 +28,13 @@ dependencies {
     implementation(libs.room.ktx)
     implementation(libs.room.runtime)
     implementation(libs.room.compiler)
-//    implementation(project(":AppLibs:di"))
-//    implementation(project(":TechLibs:network"))
-//    implFoundation(FoundationModules.AppLibs.DI, project)
-//    implFoundation(FoundationModules.TechLibs.NETWORK, project)
-//
+    implementation(libs.retrofit.core)
+
 //    implementation(Libs.ROOM_RUNTIME)
 //    implementation(Libs.ROOM_KTX)
 //    kapt(Libs.ROOM_COMPILER)
     api(libs.kotlinx.datetime)
-//
+
 //    implementation(Libs.DATASTORE_PREFERENCES)
 //    implementation(Libs.GSON)
 //
