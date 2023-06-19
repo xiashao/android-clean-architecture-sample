@@ -31,6 +31,7 @@ dependencies {
     implementation(libs.retrofit.core)
     implementation(libs.androidx.dataStore.core)
     implementation(libs.retrofit.converter.gson)
+    implementation(libs.okhttp.logging)
     api(libs.kotlinx.datetime)
     implementation(libs.androidx.dataStore.datastore.preferences)
 }
