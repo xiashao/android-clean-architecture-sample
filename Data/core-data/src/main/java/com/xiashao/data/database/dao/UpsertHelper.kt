@@ -1,11 +1,6 @@
 package com.xiashao.data.database.dao
 
-/**
- * Performs an upsert by first attempting to insert [items] using [insertMany] with the the result
- * of the inserts returned.
- *
- * Items that were not inserted due to conflicts are then updated using [updateMany]
- */
+
 suspend fun <T> upsert(
     items: List<T>,
     insertMany: suspend (List<T>) -> List<Long>,

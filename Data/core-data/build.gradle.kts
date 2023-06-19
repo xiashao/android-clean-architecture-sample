@@ -29,16 +29,8 @@ dependencies {
     implementation(libs.room.runtime)
     implementation(libs.room.compiler)
     implementation(libs.retrofit.core)
-
-//    implementation(Libs.ROOM_RUNTIME)
-//    implementation(Libs.ROOM_KTX)
-//    kapt(Libs.ROOM_COMPILER)
+    implementation(libs.androidx.dataStore.core)
+    implementation(libs.retrofit.converter.gson)
     api(libs.kotlinx.datetime)
-
-//    implementation(Libs.DATASTORE_PREFERENCES)
-//    implementation(Libs.GSON)
-//
-//    implementation(Libs.LOGGING_INTERCEPTOR)
-//    implementation(Libs.RETROFIT)
-//    implementation(Libs.RETROFIT_GSON_CONVERTER)
+    implementation(libs.androidx.dataStore.datastore.preferences)
 }
