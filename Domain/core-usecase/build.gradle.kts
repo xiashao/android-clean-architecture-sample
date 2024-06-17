@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.xiashao.domain.usecase"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 24

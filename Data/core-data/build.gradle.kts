@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.xiashao.sample.data"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 24
@@ -33,5 +33,5 @@ dependencies {
     implementation(libs.retrofit.converter.gson)
     implementation(libs.okhttp.logging)
     api(libs.kotlinx.datetime)
-    implementation(libs.androidx.dataStore.datastore.preferences)
+//    implementation(libs.androidx.dataStore.datastore.preferences)
 }

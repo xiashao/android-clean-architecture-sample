@@ -20,7 +20,7 @@ java {
 dependencies {
     implementation("com.android.tools.build:gradle:8.0.2")
     implementation("commons-io:commons-io:2.6")
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.20")
     implementation("org.jlleitschuh.gradle:ktlint-gradle:11.0.0")
     implementation("com.google.protobuf:protobuf-gradle-plugin:0.9.1")
     implementation(gradleApi())
